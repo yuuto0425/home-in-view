@@ -1,0 +1,27 @@
+$cBlack:#333;
+$cWhite:#FFF;
+$cGreen:#124403;
+$cYellow:#ABA501;
+// フォント指定
+$font_ja:'Noto Serif JP',sans-serif;//都度変更
+$font_en:'Volkhov', serif;//都度変更
+$font_title:'Amatic SC',sans-serif;//都度変更
+$font_number:'Damion',sans-serif;//都度変更
+// フォントカラー
+$font_main: $cBlack;//都度変更
+$font_sub: $cWhite;//都度変更
+$font_accent: $cGreen;//都度変更
+$font_sub_accent: $cYellow;//都度変更
+
+// 背景色
+$bg_main: $cWhite;//都度変更
+$bg_sub: $cGreen;//都度変更
+$bg_accent: $cBlack;//都度変更
+$bg_sub_accent: $cYellow;//都度変更
+
+// インナー幅
+$width__inner__pc: 1180px;//都度変更
+$width__inner__tab: 777px;//都度変更
+$width__inner__sp: 335px;//都度変更
+
+$box-shadow:0px 0px 15px -5px #777777;

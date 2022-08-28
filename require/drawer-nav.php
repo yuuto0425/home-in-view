@@ -1,0 +1,27 @@
+<?php 
+$drawer_nav_list = [
+    [
+        'title'=>'HOME',
+        'link'=>'/'
+    ],
+    [
+        'title'=>'ABOUT',
+        'link'=>'about'
+    ],
+    [
+        'title'=>'SERVECE',
+        'link'=>'service'
+    ],
+    [
+        'title'=>'LOCATION',
+        'link'=>'location'
+    ],
+    [
+        'title'=>'NEWS',
+        'link'=>'news'
+    ],
+    [
+        'title'=>'CONTACT',
+        'link'=>'contact'
+    ],
+];?>

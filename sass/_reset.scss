@@ -1,0 +1,85 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+header,
+footer,
+nav,
+section,
+article,
+aside,
+figure,
+figcaption {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+a {
+    color: $font_main;
+    text-decoration: none;
+    cursor:pointer;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+video {
+    // max-width: 100%;
+    object-fit: cover;
+}
+figure {
+    margin: 0;
+}
+input {
+    cursor: pointer;
+    appearance: none;
+}
+textarea{
+}
+input,textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 16px;
+}

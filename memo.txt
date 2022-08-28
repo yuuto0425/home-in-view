@@ -1,0 +1,74 @@
+adobe stock 世界地図 写真
+https://stock.adobe.com/jp/search?k=%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%B3&search_type=usertyped
+
+intersectionObserver関係
+
+
+nav-menu 現在のページにclass,currentを付ける
+header mouseを乗せたときに背景に白を敷く
+
+デザインを足す。
+loding画面のデザインをロゴがわかるように入れる
+php お問合わせフォーム作成
+javascript 上スクロールでメニューが隠れる
+参考サイト
+https://into-the-program.com/upper-lower-scroll/
+three.js,canvas
+トップアニメーション
+
+コンテンツ文字入力
+
+
+wordpress コンテンツcssスタイル設定
+
+
+パンくずリスト作成
+
+is_page_template()でファイルを整理できるか試す
+
+
+エラー事項
+is_dateとis_post_type_archiveがぶつかる
+
+
+
+よくある質問
+
+
+
+
+
+
+
+
+
+
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+＝＝＝＝
+
+
+
+明日(今日)、明後日・やること
+
+　・codemafiaのcodeを参考に
+・phpのお問い合わせフォームを完成させる。
+・udemyのthree.jsを参考にし、3dを作成する
+
+
+
+
+
+・画像を圧縮する
+・CSS,javascriptを圧縮する
+
+
+最終日までの平日にやること
+・コンテンツの入力
+　・news
+　・about-company
+　・service
+　・location
+　・q&a
+・写真をきれいなものに置き換える。

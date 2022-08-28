@@ -1,0 +1,225 @@
+
+
+.l_about_mv {
+    background-image: url(../images/top/top-mv.png);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &.max_tab {
+        @include mq('sm') {
+            height: 50vh;
+        }
+        @include mq('md') {
+            height: 50vh;
+        }
+    }
+    &_head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &_title {
+        // font-size: 100px;
+    }
+
+    &_sub_title {
+        font-size: 24px;
+    }
+}
+
+
+//l_company
+
+.l_company {
+    &_inner {}
+
+    &_content {
+        margin-top: 60px;
+        @include mq('sm') {
+            margin-top: 60px;
+        }
+        @include mq('md') {
+            margin-top: 60px;
+        }
+    }
+
+    &_wrapper {
+        @include mq('xl') {
+            flex-wrap: nowrap;
+        }
+        @include mq('lg') {
+            flex-wrap: nowrap;
+        }
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &_figure {
+        width: 60%;
+        height: 400px;
+        margin-left: calc(50% - 50vw);
+        
+        @include mq('sm') {
+            width: 100%;
+        }
+        @include mq('md') {
+            width: 100%;
+        }
+        & img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    &_body {
+        margin: 0 0 0 20px;
+        width: 60%;
+        @include mq('sm') {
+            margin: 20px 0 0 0;
+            width: 100%;
+        }
+        @include mq('md') {
+            margin:20px 0 0 0;
+            width: 100%;
+        }
+    }
+
+    &_head {
+        text-align: left;
+    }
+
+    &_title {
+
+    }
+
+    &_sub_title {
+        font-size: 24px;
+    }
+
+    &_dl {
+        margin-top: 60px;
+    }
+
+    &_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $bg_accent;
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &_dt {
+        font-size: 24px;
+        width: 20%;
+        @include mq('sm') {
+            font-size: 18px;
+            width: 30%;
+        }
+
+    }
+
+    &_dd {
+        font-size: 16px;
+        width: 80%;
+        @include mq('sm') {
+            width: 70%;
+        }
+    }
+
+    &_map {
+        margin-top: 40px;
+
+        & iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+// l_nqa_link
+
+.l_nqa_link {
+    &_inner {
+        padding: 40px;
+        @include mq('sm') {
+            padding: 40px 15px;
+        }
+    }
+    &_content {
+        max-height: 100%;
+        height: 260px;
+        @include mq('sm') {
+            height: 200px;
+        }
+    }
+    &_button {
+        @include mq('sm') {
+            max-width: 570px;
+            width: 100%;
+            padding: 35px 0;
+        }
+        @include mq('md') {
+            max-width: 570px;
+            width: 100%;
+        }
+        margin: 0 auto;
+        width: fit-content;
+        padding: 45px 0;
+        width: 60%;
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        transform-style: preserve-3d;
+        perspective: 130px;
+        position: relative;
+        height: 50%;
+        transition: transform .5s ease-in 0s;
+        transform: rotateX(0);
+        transform-origin: top;
+        &:hover {
+            // transform: rotateX(90deg);
+            & span {
+                &:nth-child(1) {
+                    transform :rotateX(0);
+                }
+                &:nth-child(2) {
+                    transform: rotateX(-90deg);
+                }
+            }
+        }
+        & span {
+            // max-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: transform .5s ease-in 0s;
+            &:nth-child(1){
+                background-color: $bg_sub;
+                color: $font_sub;
+                transform: rotateX(90deg);
+                transform-origin: bottom;
+            }
+            &:nth-child(2){
+                transform-origin: top;
+                border: 1px solid $bg_accent;
+                color: $font_accent;
+                background-color: $bg_main;
+            }
+        }
+    }
+}

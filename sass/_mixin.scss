@@ -1,0 +1,94 @@
+//プロパティ設定
+
+@mixin background($repeat: no-repeat, $position: center, $size: cover) {
+    background: {
+        // image:$image;
+        repeat: $repeat;
+        position: $position;
+        size: $size;
+    }
+}
+// $image,
+@mixin animation(
+    $name,
+    $duration: 1s,
+    $timing-function: ease,
+    $delay: 0s,
+    $iteration-count: 1,
+    $direction: normal,
+    $fill-mode: forwards
+) {
+    animation: {
+        name: $name;
+        duration: $duration;//開始から終了までの時間
+        timing-function: $timing-function;//動き方の調整
+        delay: $delay;//遅延時間
+        iteration-count: $iteration-count;//何回繰り返すか
+        direction: $direction;//アニメーションの0~100%の中で再生の向きを調整
+        fill-mode: $fill-mode;//アニメーションの実行前後を指定
+        //https://shu-naka-blog.com/css/animation-fill-mode/
+    }
+}
+
+//独自の
+
+@mixin logo($color, $hoverColor) {
+    font-size: 20px;
+    width: 150px;
+    height: 100px;
+    @include mq('sm') {
+        width: 100px;
+        height: 62px;
+    }
+
+    &:hover {
+        & a {
+            svg {
+                &:nth-child(1) {
+                    fill: $hoverColor;
+                }
+
+                &:nth-child(2) {
+                    // fill: $bg_sub;
+                    // background-color: $bg_sub;
+                    g {
+                        fill: $hoverColor;
+                    }
+                }
+            }
+        }
+    }
+    & a {
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        & svg {
+            display: block;
+            position: absolute;
+            width: 100%;
+            transition: fill 0.5s ease;
+            &:nth-child(1) {
+                bottom: 0;
+                right: 0;
+                width: 7.5em;
+                fill: $color;
+                @include mq('sm') {
+                    // width: 5.5em;
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(2) {
+                top: 0;
+                left: 0;
+                width: 2.5em;
+                fill: $color;
+                @include mq('sm') {
+                    width: 1.5em;
+                }
+            }
+        }
+    }
+}
